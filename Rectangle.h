@@ -1,7 +1,8 @@
 #pragma once
 #include "Shape.h"
 
-class Rectangle : public Shape {
+class Rectangle : public Shape
+{
 private:
     double width;
     double height;
@@ -9,6 +10,6 @@ private:
 public:
     Rectangle(double w, double h);
 
-    double area() const override;
-    double perimeter() const override;
+    double area() const;
+    double perimeter() const;
 };

@@ -1,13 +1,17 @@
 #pragma once
 #include "Shape.h"
+#include "Point.h"
 
-class Triangle : public Shape {
+class Triangle : public Shape
+{
 private:
-    double a, b, c; // sides
+    Point p1;
+    Point p2;
+    Point p3;
 
 public:
-    Triangle(double sideA, double sideB, double sideC);
+    Triangle(Point a, Point b, Point c);
 
-    double area() const override;
-    double perimeter() const override;
+    double perimeter() const;
+    double area() const;
 };

@@ -12,6 +12,9 @@
         "Circle.cpp",
         "Rectangle.cpp",
         "Triangle.cpp",
+        "line.cpp",
+        "Point.cpp",
+        "Filereader.cpp",
         "-o",
         "shapes"
       ],

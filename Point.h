@@ -1,15 +1,17 @@
 #pragma once
 #include "Shape.h"
 
-class Point : Public Shape
+class Point : public Shape
 {
 private:
     double x;
     double y;
 
 public:
-    point(double a, double b)
+    Point(double a, double b);
+    double getX() const;
+    double getY() const;
 
-        double area() const override;
-    double perimeter() const override;
+    double area() const;
+    double perimeter() const;
 };
