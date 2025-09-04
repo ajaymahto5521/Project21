@@ -8,3 +8,9 @@ double Line::length() const
     double dy = p2.getY() - p1.getY();
     return sqrt(dx * dx + dy * dy);
 }
+std::vector<Point> Line::getpoints() const{
+    std::vector<Point> points;
+    points.push_back(p1);
+    points.push_back(p2);
+    return points;
+}

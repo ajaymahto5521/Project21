@@ -1,15 +1,20 @@
 #pragma once
 #include "Shape.h"
+#include "Point.h"
+#include <vector>
 
 class Rectangle : public Shape
 {
 private:
-    double width;
-    double height;
+   Point p1;
+   Point p3;
+   Point p2;
+   Point p4;
 
 public:
-    Rectangle(double w, double h);
+    Rectangle(Point p1, Point p3);
 
     double area() const;
     double perimeter() const;
+    std::vector<Point> getpoints() const;
 };

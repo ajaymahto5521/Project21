@@ -1,9 +1,8 @@
 #pragma once
-#include "Shape.h"
 
-class Point : public Shape
+class Point
 {
-private:
+public:
     double x;
     double y;
 

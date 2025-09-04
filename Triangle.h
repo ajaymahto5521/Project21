@@ -1,6 +1,7 @@
 #pragma once
 #include "Shape.h"
 #include "Point.h"
+#include <vector>
 
 class Triangle : public Shape
 {
@@ -14,4 +15,5 @@ public:
 
     double perimeter() const;
     double area() const;
+    std::vector<Point> getpoints() const;
 };

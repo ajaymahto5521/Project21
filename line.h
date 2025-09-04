@@ -1,6 +1,7 @@
 #pragma once
 #include "Shape.h"
 #include "point.h"
+#include<vector>
 
 class Line : public Shape
 {
@@ -10,6 +11,6 @@ private:
 
 public:
     Line(Point a, Point b);
-
     double length() const;
+    std::vector<Point> getpoints() const; 
 };

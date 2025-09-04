@@ -14,7 +14,8 @@
         "Triangle.cpp",
         "line.cpp",
         "Point.cpp",
-        "Filereader.cpp",
+        "Filewriter.cpp",
+        "GeometryEngine.cpp",
         "-o",
         "shapes"
       ],
